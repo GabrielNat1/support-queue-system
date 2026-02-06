@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SupportQueueSystemApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(SupportQueueSystemApplication.class, args);
-        SpringApplication app = new SpringApplication(AppApplication.class);
+        SpringApplication app = new SpringApplication(SupportQueueSystemApplication.class);
         app.addInitializers(new DotenvInitializerConfig());
         app.run(args);
 	}
